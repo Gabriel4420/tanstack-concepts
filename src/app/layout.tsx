@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Providers } from "@/utils/providers";
+import { useQuery } from '@tanstack/react-query'
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,8 +30,19 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
+}
+
+function ExemploComponente() {
+  const { data, isLoading } = useQuery({
+    queryKey: ['exemplo'],
+    queryFn: () => fetch('/api/exemplo').then(res => res.json())
+  })
+
+  if (isLoading) return <div>Carregando...</div>
+  
+  return <div>{data}</div>
 }

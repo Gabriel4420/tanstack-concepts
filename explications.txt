@@ -1,0 +1,45 @@
+/* Configuração do Tanstack Query 
+  
+// A queryKey é um identificador único usado pelo TanStack Query para:
+// 1. Armazenar dados em cache
+// 2. Refetch automático
+// 3. Compartilhar dados entre componentes
+// 4. Invalidar cache quando necessário
+
+// Pode ser uma string simples
+queryKey: ['posts'],
+
+// Ou um array com múltiplos valores para queries parametrizadas
+queryKey: ['post', { id: 1 }],
+
+// Exemplo com filtros
+queryKey: ['posts', { status: 'published', author: 'john' }],
+
+
+  // A queryFn é a função que busca os dados. Ela deve:
+  // 1. Retornar uma Promise com os dados
+  // 2. Lançar um erro em caso de falha
+  // 3. Ser idempotente (mesmo resultado para mesmos parâmetros)
+  
+  // Exemplo básico com fetch:
+  queryFn: () => fetch('/api/posts').then(res => res.json())
+  
+  // Com axios:
+  queryFn: () => axios.get('/api/posts').then(res => res.data)
+  
+  // Com parâmetros da queryKey:
+  queryFn: ({ queryKey }) => {
+    const [_key, { id }] = queryKey
+    return fetch(`/api/posts/${id}`).then(res => res.json())
+  }
+  
+  // Com tratamento de erro:
+  queryFn: async () => {
+    const res = await fetch('/api/posts')
+    if (!res.ok) {
+      throw new Error('Erro ao buscar posts')
+    }
+    return res.json()
+  }
+
+  */
