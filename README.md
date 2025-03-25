@@ -22,7 +22,7 @@
 </p>
 
 <p align="center">
-  <img alt="Gif da Aplicação" src="https://tanstack.com/_build/assets/logo-color-600w-Er4SOkq1.png)" />
+  <img alt="Gif da Aplicação" src="https://tanstack.com/_build/assets/logo-color-600w-Er4SOkq1.png" />
 </p>
 
 
