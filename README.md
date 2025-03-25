@@ -21,7 +21,7 @@
 
 
   <a href="https://www.linkedin.com/in/gabriel-rodrigues-perez-2069b072/">
-    <img alt="Made by Gabriel" src="https://img.shields.io/badge/made%20by-Gabriel-%2304D361">
+    <img alt="Made by Gabriel" width="300" src="https://img.shields.io/badge/made%20by-Gabriel-%2304D361">
   </a>
 </p>
 <br/>
