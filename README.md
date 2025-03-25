@@ -1,6 +1,10 @@
 # TanStack Concepts
 
 <p align="center">
+  <img alt="Gif da Aplicação" src="https://tanstack.com/_build/assets/logo-color-600w-Er4SOkq1.png" />
+</p>
+<br/>
+<p align="center">
    <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Gabriel4420/tanstack-concepts">
 
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Gabriel4420/tanstack-concepts?logo=html">
@@ -20,12 +24,7 @@
     <img alt="Made by Gabriel" src="https://img.shields.io/badge/made%20by-Gabriel-%2304D361">
   </a>
 </p>
-
-<p align="center">
-  <img alt="Gif da Aplicação" src="https://tanstack.com/_build/assets/logo-color-600w-Er4SOkq1.png" />
-</p>
-
-
+<br/>
 
 Este repositório tem como intuito fornecer um estudo prático sobre o uso da biblioteca TanStack Query, oferecendo uma introdução aos principais conceitos e práticas recomendadas para gerenciar dados em aplicações React.
 
